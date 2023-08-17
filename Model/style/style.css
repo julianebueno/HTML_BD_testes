@@ -63,8 +63,8 @@ main img {
 }
 .image_descricao {
   position: absolute;
-  bottom: 8px;
-  right: 16px;
+  bottom: 6px;
+  right: 15%;
 }
 /* -----------------------------------  */
 .graph {
@@ -76,11 +76,18 @@ footer {
   color: var(--cor_letra_header);
   display: flex;
   justify-content: end;
-  padding: 0 1em 1em 1em;
 }
-footer section {
+footer .container{
+  background-color: var(--cor_fundo_header);
+  color: var(--cor_letra_header);
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+#tecnologias, #colaboradores{
   display: flex;
   flex-direction: column;
+  width: 8rem;
   padding: .5rem;
   margin: 0 1rem;
 }
@@ -173,7 +180,7 @@ footer a:hover {
   }
 }
 /* ----------------------------------- FIM animação de bolinhas da introdução*/
-
+/* ----------------------------------- RESPONSIVIDADE */
 @media (max-width: 500px) { 
   /* Telas menores de 500px */
   header h3{
@@ -183,5 +190,3 @@ footer a:hover {
     font-size: x-large;
   }
 }
-
-
